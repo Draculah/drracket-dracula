@@ -1,9 +1,9 @@
 #lang info
 
 ;(define collection "drracket-dracula")
-(define deps '("base"))
-(define pkg-desc "Dracula theme with a white-on-black base")
-(define version "1.0")
+(define deps        '("base"))
+(define pkg-desc    "Dracula theme with a white-on-black base")
+(define version     "1.1")
 (define pkg-authors '(Draculah))
 
 ;; color scheme
@@ -26,7 +26,7 @@
 (define unknown    #(255   0 255))
 
 (define framework:color-schemes
-  `(#hash((name . "Dracula")
+  `(#hash((name . "Dracula VS")
           (white-on-black-base? . #t)
           (colors
            .
@@ -37,14 +37,14 @@
             (drracket:syncheck:document-identifier   ,base0)
             (drracket:syncheck:matching-identifiers  ,base0)
             (drracket:syncheck:tail-arrow            ,yellow) ;parenthesis arrow
-            (drracket:syncheck:template-arrow        ,turquoise) ;?
+            (drracket:syncheck:template-arrow        ,turquoise)
 ;            (drracket:syncheck:untacked              ,unknown); ,white)
             (drracket:syncheck:unused-identifier     ,white) ; unused requires etc.
             (drracket:syncheck:var-arrow             ,orange)
             
             (framework:basic-canvas-background         ,base)
             (framework:default-text-color              ,white)
-            (framework:disabled-background-color       ,unknown) ;?
+;            (framework:disabled-background-color       ,unknown) ;?
             (framework:failed-search-background-color  ,red)
             
             (framework:line-numbers                                 ,cyan)
@@ -83,19 +83,19 @@
             (framework:syntax-color:scheme:error               ,red)
             (framework:syntax-color:scheme:hash-colon-keyword  ,cyan)
             (framework:syntax-color:scheme:keyword             ,green)
-            (framework:syntax-color:scheme:other               ,light-gray) ; ,dark-gray
+            (framework:syntax-color:scheme:other               ,light-gray)
             (framework:syntax-color:scheme:parenthesis         ,white)   
             (framework:syntax-color:scheme:string              ,yellow)
             (framework:syntax-color:scheme:symbol              ,pink)
             (framework:syntax-color:scheme:text                ,turquoise)
             
             (plt:htdp:test-coverage-off             ,white
-                                                    #s(background ,red)) ;?
+                                                    #s(background ,red))
             (plt:htdp:test-coverage-on              ,white
-                                                    #s(background ,violet)) ;?
+                                                    #s(background ,violet))
             (plt:module-language:test-coverage-off  ,white
-                                                    #s(background ,red)) ;?
+                                                    #s(background ,red))
             (plt:module-language:test-coverage-on   ,white
-                                                    #s(background ,violet)) ;?
+                                                    #s(background ,violet))
             ))
           )))
